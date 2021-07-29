@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    form .input-and-add-product {
+      height: 36px;
+    }
+
+    .input-and-add-product input {
+      height: 30px;
+      width: 220px;
+      margin-left: 8px;
+      outline: none;
+      border: solid 1px #000;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 68px;
+      height: 32px;
+      background-color: #50af50;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .add-btn {
+      width: 94px;
+      height: 34px;
+      margin-left: 16px;
+    }
+
+    table {
+      margin: 20px auto;
+    }
+  </style>
+
+
+</head>
+<body>
+<h1>Add New Product</h1>
+<form action="">
+  <div class="input-and-add-product">
+    <input id="input" type="text">
+    <button class="add-btn" onclick="add()" type="button">Add</button>
+  </div>
+</form>
+<div id="data"></div>
+<script src="code-case.js"></script>
+</body>
+</html>
