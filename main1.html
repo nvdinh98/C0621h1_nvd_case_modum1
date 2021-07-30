@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr, td, th {
+            padding: 10px
+        }
+
+        input {
+            border: 1px solid #b3a5a5;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        button {
+            border: 1px solid #14ee14;
+            border-radius: 4px;
+            background-color: #14ee14;
+            padding: 5px;
+            margin: 2px;
+            font-family: sans-serif;
+        }
+
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        th, tr, td {
+            border: 1px solid #c2b7b7;
+        }
+
+        th {
+
+            background: rgba(239, 98, 15, 0.65);
+        }
+
+        .centerBody {
+            margin-left: 10%;
+            width: 80%;
+            padding: 10px;
+        }
+
+        .centerBody div {
+            text-align: center;
+            width: 100%;
+        }
+
+        .centerBody #Result {
+            width: 100%;
+        }
+
+        .centerBody #Result table {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="centerBody">
+    <div>
+        <h1>Add New Product</h1>
+        <input type="text" id="addProduct" placeholder="Product Name">
+        <input type="number" id="addPrice" placeholder="Price">
+        <input type="text" id="addDescription" placeholder="Description">
+        <button onclick="addProduct()">Add</button>
+        <br><br>
+    </div>
+
+    <div>
+        <input type="text" id="editProduct" placeholder="Product Name">
+        <input type="text" id="editPrice" placeholder="Price">
+        <input type="text" id="editDescription" placeholder="Description">
+        <button id="btn-Edit" value="" onclick="editProduct(this.value)">Edit</button>
+    </div>
+    <div id="Result"></div>
+</div>
+<script src="code1.js"></script>
+</body>
+</html>
